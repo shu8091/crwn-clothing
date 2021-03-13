@@ -26,6 +26,9 @@
     display: flex;
 
     .arrow {
+      border: none;
+      outline:none;
+      background-color: unset;
       cursor: pointer;
     }
 
