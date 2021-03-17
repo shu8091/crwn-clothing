@@ -1,0 +1,35 @@
+.AppForText{
+  display: flex;
+  flex-direction: row;
+
+  .container{
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgb(142, 242, 155);
+    border-radius: 10px;
+    text-align: center;
+  
+    .post {
+      width: 90%;
+      margin: 10px auto;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #fff;
+      text-align: left;
+  
+      h1 {
+        font-size: 20px;
+      }
+
+      h2 {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .user-list {
+    background-color: rgb(142, 144, 242);
+  }
+  
+}
