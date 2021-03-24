@@ -3,7 +3,7 @@
 
 export const AddItemToCart = (cartItems, cartItemToAdd) => {
   const existingCartItem = cartItems.find(
-    // find() will return the first matching item
+    // find will return the first matching item
     cartItem => cartItem.id === cartItemToAdd.id
   );
 
