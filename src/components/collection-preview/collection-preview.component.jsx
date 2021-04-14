@@ -4,7 +4,7 @@ import CollectionItem from '../collection-item/collection-item.component';
 import './collection-preview.styles.scss';
 
 const CollectionPreview = ({ title, items, routeName, history, match }) => {
-  console.log(match)
+  // console.log(match)
   return (
     <div className='collection-preview'>
       <h1 className='title' onClick={() => history.push(`${match.url}/${routeName}`)} >{title}</h1>

@@ -1,11 +1,16 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { Redirect } from 'react-router-dom';
+
 import { selectCollection } from '../../redux/shop/shop.selector';
 import CollectionItem from '../../components/collection-item/collection-item.component';
+import GenericNotFound from '../../components/page-not-found/page-not-found.component';
+
 import './collection.styles.scss';
 
 const CollectionPage = ({ collection }) => {
   // const { title, items } = collection || { title: '', items: [] };
+  if (collection === undefined) return <Redirect to="/notFound" component={GenericNotFound} />
   const { title, items } = collection;
   return (
     <div className='collection-page'>

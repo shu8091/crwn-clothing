@@ -2,7 +2,7 @@ import firebase from 'firebase/app';
 import 'firebase/firestore';
 import 'firebase/auth';
 
-// firebase config
+// Firebase config
 const config = {
   apiKey: "AIzaSyCV2BxswxcHWzsG7FxRHp2MhQJR1ZgbTLo",
   authDomain: "crwn-db-934b4.firebaseapp.com",
@@ -13,7 +13,7 @@ const config = {
 };
 
 //--------------------------------------------------
-// create user
+// Create user
 export const createUserProfileDocument = async (userAuth, additionalData) => {
   if(!userAuth) return;
 
@@ -40,7 +40,7 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
 }
 
 //-------------------------------------------------
-// push shop data to cloud one time
+// Push shop data to cloud one time
 export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
   const collectionRef = firestore.collection(collectionKey);
   // console.log(collectionRef);
@@ -56,7 +56,7 @@ export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => 
 }
 
 //--------------------------------------------------
-// get whole shop data snapshot from cloud
+// Get whole shop data snapshot from cloud
 
 // convert it to an obj
 export const convertCollectionsSnapshotToMap = collections => {
